@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cff2487bc9.js" crossorigin="anonymous"></script>
+    <title>Media</title>
+
+    <!-- Colors Used
+        body:blue-grey
+        accent color1:blue-grey darken-4
+        accent color2:blue-grey lighten-1
+        Font Color: blue-grey lighten-5
+    -->
+</head>
+
+<body class="blue-grey">
+
+<!-- Fixed Nav -->
+    <div class="navbar-fixed">
+        <nav class="blue-grey darken-4">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Puggie</a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="colors.html">Home</a></li>
+                        <li><a href="grid.html">About Us</a></li>
+                        <li><a href="Floating-buttons.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+    </div>
+
+<!-- Material Box -->
+    <div class="container">
+        <h1 class="white-text">Media</h1>
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="img/dog1.jpg" class="materialboxed width=100%" alt="" class="" width="100%"">
+            </div>
+
+            <div class="col s12 m6">
+                <img src="img/dog3.jpg" class="materialboxed" alt="" class="" width="100%"">
+            </div>
+        </div>
+    <!-- end of container -->
+    </div>
+    <br>
+
+<!-- Image - Circle Frame-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="img/dog5.jpg" class="responsive-img" alt="" class="" width="100%">
+            </div>
+            <div class="col s12 m6">
+                <img src="img/dog2.jpg" class="responsive-img circle" alt="" class="" width="100%">
+            </div>
+        </div>
+
+        <!-- EOC -->
+    </div>
+<br>
+<!-- slider -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/dog2.jpg" alt="">
+                <!-- center align -->
+                <div class="caption center-align">
+                    <h3>Facts about pugs</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/dog3.jpg" alt="">
+                <!-- center align -->
+                <div class="caption left-align">
+                    <h3>Facts about pugsr</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/dog4.jpg" alt="">
+                <!-- center align -->
+                <div class="caption right-align">
+                    <h3>Facts about pugs</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/dog5.jpg" alt="">
+                <!-- center align -->
+                <div class="caption center-align">
+                    <h3>Ang bilis ni Sir</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- responsive image -->
+
+
+
+    <!-- responsive video embed -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="video-container">
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/SNYTnC-cb40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <!-- responsive video element -->
+                <video class="responsive-video" controls width="100%">
+                    <source src="videos/samplevideo.mp4">
+                </video>
+
+            </div>
+        </div>
+        <!-- EOC -->
+    </div>
+    
+
+
+
+    <!-- JQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Compiled and Minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $('.materialboxed').materialbox();
+        $('.slider').slider({
+                // indicators: false,
+                height: 500,
+                interval: 3000
+            });
+    });
+</script>
+</body>
+</html>
